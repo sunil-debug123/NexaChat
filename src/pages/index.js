@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Chat from '../../components/chat'
+import React from 'react';
+import FileUploadAndQuestion from '../../components/FileUploadAndQuestion';
 
-const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <>
-      <Chat />
-    </>
-  )
-}
+    <div className="bg-gray-200 min-h-screen flex items-center justify-center">
+      <FileUploadAndQuestion />
+    </div>
+  );
+};
+
+export default HomePage;
